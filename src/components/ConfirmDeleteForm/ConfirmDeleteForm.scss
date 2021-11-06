@@ -1,0 +1,33 @@
+.confirm-delete {
+   
+
+    &__question {
+        color: #043b5f;
+        font-weight: 600;
+
+    text-align: center;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__answer-button {
+        color: #0e212e;
+        font-weight: bold;
+        padding: 6px 21px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 13px;
+
+        &:hover {
+            background-color: rgba(221, 219, 219, 0.747);
+        }
+
+        &:active {
+            background-color: rgba(185, 180, 180, 0.829);
+        }
+    }
+}

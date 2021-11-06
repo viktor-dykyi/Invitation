@@ -1,0 +1,79 @@
+.list-item {
+    position: relative;
+    margin-top: 20px;
+    color: #043b5f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 6px 5px 26px -11px rgba(0, 0, 0, 0.75);
+    padding-right: 20px;
+    background-color: #c2d3df;
+    border-radius: 3px;
+
+
+}
+
+.save-button {
+    color: #043b5f;
+    font-weight: 600;
+    border: 2px solid #4f94c2;
+    background-color: #92caf0;
+    width: 51px;
+    height: 22px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+
+    &:hover {
+        background-color: #96c1dd;
+    }
+
+    &:active {
+        background-color: #76a3c2;
+    }
+}
+
+.user-item {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__input {
+        border-radius: 2px;
+        background-color: cornsilk;
+        margin: 6px;
+
+        width: 116px;
+    }
+
+    &__edit-button {
+        position: absolute;
+        right: 73px;
+        top: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 20px;
+
+        &:hover {
+            color: #76a3c2
+        }
+    }
+
+    &__icon-button {
+        font-size: 17px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        &--error {
+            color: red;
+        }
+
+        &:hover {
+            color: #76a3c2
+        }
+    }
+}

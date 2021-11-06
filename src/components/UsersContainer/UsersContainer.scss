@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width:768px) {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.dnd-staff-placeholder {
+  position: absolute;
+}

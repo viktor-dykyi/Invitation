@@ -1,0 +1,14 @@
+.form {
+    position: fixed;
+    z-index: 101;
+    width: 200px;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -100px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 1px 9px -3px rgba($color: rgb(114, 110, 110), $alpha: 1.0);
+
+}

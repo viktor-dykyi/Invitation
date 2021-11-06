@@ -1,0 +1,12 @@
+.list-statistic {
+    text-align: center;
+    padding-bottom: 10px;
+    line-height: 0;
+    font-weight: bold;
+    &__active-users {
+color: rgba(20, 59, 20, 0.856);
+    }
+&__invited-users{
+color: rgb(105, 83, 87);
+}
+}
