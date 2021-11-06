@@ -2,4 +2,9 @@
     height: 75%;
     overflow-x: hidden;
     overflow-y: scroll;  
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+      }
 }

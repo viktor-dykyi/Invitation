@@ -6,7 +6,7 @@
     box-shadow: 10px 4px 13px rgba(83, 82, 82, 0.897);
     border-radius: 10px;
     padding: 20px;
-
+    position: relative;
     &__heading {
         text-align: center;
         color: #4f94c2;
@@ -14,6 +14,21 @@
     }
     &--green{
         background-color: rgba(131, 245, 131, 0.671);
+    }
+    &__score{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        font-weight: bold;
+        height: 30px;
+        background-color: #92caf0;
+        border: 2px solid #4f94c2;
+        color: white;
+        border-radius: 50%;
+        top: 15px;
+        right: 20px;
     }
 
     @media only screen and (max-width:768px) {

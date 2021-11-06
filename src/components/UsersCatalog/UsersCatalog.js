@@ -7,6 +7,7 @@ import AddUserForm from "../AddUserForm/AddUserForm";
 
 export default class UsersCatalog extends PureComponent {
   state = { showAddUserForm: false };
+
   handleShowAddUserForm = () => {
     this.setState({ showAddUserForm: true });
   };
@@ -15,8 +16,15 @@ export default class UsersCatalog extends PureComponent {
   };
   render() {
     return (
-      <ListCard innerRef={this.props.innerRef} title="User's catalog">
-        <UserList userEditingIds={this.props.userEditingIds} onStartEdit={this.props.onStartEdit} onStopEdit={this.props.onStopEdit} onEdit={this.props.onEdit} onSave={this.props.onSave} users={this.props.users} />
+      <ListCard listLength={this.props.users.length} innerRef={this.props.innerRef} title="User's catalog">
+        <UserList
+          userEditingIds={this.props.userEditingIds}
+          onStartEdit={this.props.onStartEdit}
+          onStopEdit={this.props.onStopEdit}
+          onEdit={this.props.onEdit}
+          onSave={this.props.onSave}
+          users={this.props.users}
+        />
         <Button onClick={this.handleShowAddUserForm} text="Add a new user" />
         {this.state.showAddUserForm && (
           <AddUserForm

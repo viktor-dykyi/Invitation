@@ -130,6 +130,7 @@ export default class UsersContainer extends PureComponent {
     return (
       <section className="content">
         <DragDropContext onDragEnd={this.onDragEnd}>
+          
           <Droppable droppableId="userCatalog">
             {(provided, snapshot) => (
               <>
@@ -150,6 +151,7 @@ export default class UsersContainer extends PureComponent {
               </>
             )}
           </Droppable>
+
           <Droppable droppableId="invitationList">
             {(provided, snapshot) => (
               <>

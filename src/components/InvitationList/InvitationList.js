@@ -5,6 +5,7 @@ import ListCard from "../ListCard/ListCard";
 import "../ListCard/ListCard.scss";
 import Button from "../ListCard/components/Button/Button";
 import ConfirmDeleteForm from "../ConfirmDeleteForm/ConfirmDeleteForm";
+
 export default class InvitationList extends PureComponent {
   state = { showConfirmDeleteForm: false, activeLength: 0 };
   static getDerivedStateFromProps=({users}) =>{
@@ -25,7 +26,7 @@ export default class InvitationList extends PureComponent {
   render() {
 
     return (
-      <ListCard greenMode={this.props.isDragingOver} innerRef={this.props.innerRef} title="Invited users">
+      <ListCard listLength={this.props.invitedLength} greenMode={this.props.isDragingOver} innerRef={this.props.innerRef} title="Invited users">
         <ListStatistic invitedLength={this.props.invitedLength} activeLength={this.state.activeLength} />
         <MembersList onStatusChange={this.props.onStatusChange} onDeleteMember={this.props.onDeleteInvitation} users={this.props.users} />
         {this.props.invitedLength > 0 && <Button
